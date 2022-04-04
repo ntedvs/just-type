@@ -1,0 +1,23 @@
+#container {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+span {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cursor {
+  border-bottom: 3px solid #0a6bf9;
+}
+
+.correct {
+  background: #bdf582;
+}
+
+.incorrect {
+  background: #db6042;
+}
