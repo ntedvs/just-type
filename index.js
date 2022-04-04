@@ -1,10 +1,9 @@
+const paragraphs = (await fetch("./paragraphs.json").then((res) => res.json()))
+  .data
+
 let count = 0
 
-;(
-  await fetch("http://metaphorpsum.com/paragraphs/1/3").then((res) =>
-    res.text()
-  )
-)
+paragraphs[Math.floor(Math.random() * paragraphs.length)].paragraph
   .split("")
   .forEach((char, i) => {
     const span = document.createElement("span")
@@ -47,3 +46,5 @@ document.addEventListener("keydown", (e) => {
     }
   }
 })
+
+// https://randomwordgenerator.com/json/paragraphs.json
