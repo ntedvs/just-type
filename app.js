@@ -46,5 +46,3 @@ document.addEventListener("keydown", (e) => {
     }
   }
 })
-
-// https://randomwordgenerator.com/json/paragraphs.json
